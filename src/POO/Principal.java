@@ -12,24 +12,22 @@ package POO;
 public class Principal {
 
     public static void main(String[] args) {
-        Carro carro = new Carro();
+        Carro carro = new Carro("Gol","Prata","KJH-8924",2);
+    carro.imprimeDadosCarro();
 
-        carro.setCor("Prata");
-        carro.setNumPortas(4);
-        carro.setPlaca("QHK-4585");
-        carro.setTipo("Ford Focus");
-
-        carro.imprimeDadosCarro();
+         Carro outroCarro = new Carro();
+         outroCarro.setCor("preto");
+         outroCarro.setPlaca("KHK-9856");
+         outroCarro.setNumPortas(4);
+         outroCarro.setTipo("fuscao");
+         
+        
         Pessoa pessoa = new Pessoa();
-
-        pessoa.setNome("Guilherme Recalcatte Vogel");
-        pessoa.setCor("Branco");
-        pessoa.setIdade(16);
-        pessoa.setAltura(1.57);
-
+/*
        pessoa.imprimirDadosPessoa();
        double a=3, b=2;
-       System.out.println(Calculo.elevar(b,a));
-               
+       System.out.println("Teste de método: "+Calculo.elevar(a,b));
+*/
+              
     }
 }

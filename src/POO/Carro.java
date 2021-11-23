@@ -23,6 +23,17 @@ public class Carro {
         System.out.println(numPortas);
     }
     
+   public Carro(){
+       
+   }
+    
+    public Carro(String tipo, String cor, String placa, int numPortas){
+    this.tipo = tipo;
+    this.cor = cor;
+    this.placa = placa;
+    this.numPortas = numPortas;
+    }
+    
     public String getTipo(){
         return tipo;
     }
