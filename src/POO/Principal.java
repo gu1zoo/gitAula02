@@ -28,6 +28,8 @@ public class Principal {
         pessoa.setAltura(1.57);
 
        pessoa.imprimirDadosPessoa();
-
+       double a=3, b=2;
+       System.out.println(Calculo.elevar(b,a));
+               
     }
 }
