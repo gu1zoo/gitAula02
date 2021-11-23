@@ -12,8 +12,8 @@ package POO;
 public class Principal {
 
     public static void main(String[] args) {
-        Carro carro = new Carro("Gol","Prata","KJH-8924",2);
-    carro.imprimeDadosCarro();
+        //Carro carro = new Carro("Gol","Prata","KJH-8924",2);
+    //carro.imprimeDadosCarro();
 
          Carro outroCarro = new Carro();
          outroCarro.setCor("preto");
@@ -22,7 +22,7 @@ public class Principal {
          outroCarro.setTipo("fuscao");
          
         
-        Pessoa pessoa = new Pessoa();
+        //Pessoa pessoa = new Pessoa();
 /*
        pessoa.imprimirDadosPessoa();
        double a=3, b=2;
