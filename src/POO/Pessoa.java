@@ -15,6 +15,14 @@ public class Pessoa {
     String cor;
     double altura;
     int idade;
+    
+    void imprimirDadosPessoa(){
+        System.out.println("---------------Pessoa-----------------");
+        System.out.println(nome);
+        System.out.println(cor);
+        System.out.println(idade);
+        System.out.println(altura);
+    }
 
     public String getNome() {
         return nome;

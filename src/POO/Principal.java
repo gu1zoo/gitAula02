@@ -19,12 +19,7 @@ public class Principal {
         carro.setPlaca("QHK-4585");
         carro.setTipo("Ford Focus");
 
-        System.out.println("---------------Carro------------------");
-        System.out.println(carro.getTipo());
-        System.out.println(carro.getCor());
-        System.out.println(carro.getPlaca());
-        System.out.println(carro.getNumPortas());
-
+        carro.imprimeDadosCarro();
         Pessoa pessoa = new Pessoa();
 
         pessoa.setNome("Guilherme Recalcatte Vogel");
@@ -32,11 +27,7 @@ public class Principal {
         pessoa.setIdade(16);
         pessoa.setAltura(1.57);
 
-        System.out.println("---------------Pessoa-----------------");
-        System.out.println(pessoa.getNome());
-        System.out.println(pessoa.getCor());
-        System.out.println(pessoa.getIdade());
-        System.out.println(pessoa.getAltura());
+       pessoa.imprimirDadosPessoa();
 
     }
 }
