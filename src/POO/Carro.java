@@ -14,25 +14,56 @@ public class Carro {
     String cor;
     String placa;
     int numPortas;
-    
-    void imprimeDadosCarro(){
-        System.out.println("---------------Carro------------------");
-        System.out.println(tipo);
-        System.out.println(cor);
-        System.out.println(placa);
-        System.out.println(numPortas);
-    }
-    
-   public Carro(){
-       
-   }
+    Pessoa dono;
+    int cambio;
     
     public Carro(String tipo, String cor, String placa, int numPortas){
     this.tipo = tipo;
     this.cor = cor;
     this.placa = placa;
     this.numPortas = numPortas;
+    }   
+    void imprimeDadosCarro(){
+        System.out.println("---------------Carro------------------");
+        System.out.println("Modelo: "+tipo);
+        System.out.println("Cor: "+cor);
+        System.out.println("Placa: "+placa);
+        System.out.println("Número de portas: "+numPortas);
+        System.out.println("Dono: "+dono.nome);
+    } 
+     
+    void ligar(){
+       System.out.println("Ligando o carro");
     }
+    void desligar(){
+        System.out.println("Desligando o carro");
+    }    
+    void acelerar(){
+        System.out.println("Acelerando");
+    }    
+    void frear(){
+        System.out.println("Freiando");
+    }
+    
+    
+    
+    
+    
+    public Pessoa getDono() {
+        return dono;
+    }
+    public void setDono(Pessoa dono) {
+        this.dono = dono;
+    }
+
+    public int getCambio() {
+        System.out.println("Marcha: "+ this.cambio);
+        return cambio;
+    }
+    public void setCambio(int cambio) {
+        this.cambio = cambio;
+    }
+    
     
     public String getTipo(){
         return tipo;

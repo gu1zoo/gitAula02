@@ -15,15 +15,52 @@ public class Pessoa {
     String cor;
     double altura;
     int idade;
+    Carro carro;
+    public Pessoa(String nome, String cor, double altura, int idade){
+    this.nome = nome;
+    this.cor = cor;
+    this.altura = altura;
+    this.idade = idade;
+    }  
     
-    void imprimirDadosPessoa(){
+    void imprimeDadosPessoa(){
         System.out.println("---------------Pessoa-----------------");
-        System.out.println(nome);
-        System.out.println(cor);
-        System.out.println(idade);
-        System.out.println(altura);
+        System.out.println("Nome: "+nome);
+        System.out.println("Cor: "+cor);
+        System.out.println("Idade: "+idade);
+        System.out.println("Altura: "+altura);
+        System.out.println("Carro: "+carro.tipo);
     }
 
+    
+    void ligarCarro(){
+        carro.ligar();
+    }
+    void desligarCarro(){
+        carro.desligar();
+    }
+    void acelerarCarro(){
+        carro.acelerar();
+    }
+    void frearCarro(){
+        carro.frear();
+    }
+    void setCambioMarcha(int marcha){
+        System.out.println("Trocando de marcha");
+        carro.setCambio(marcha);
+    }
+    
+    
+    
+    
+    
+    public Carro getCarro() {
+        return carro;
+    }
+    public void setCarro(Carro carro) {
+        this.carro = carro;
+    }
+    
     public String getNome() {
         return nome;
     }
